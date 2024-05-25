@@ -8,22 +8,22 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
               title: '*🎗️ قـائـمـة الـاوامــر🎗️*'
             },
             body: {
-              text: '🧿 افتح القائمة بواسطة الزر\n🍒 لا تلعب كثير في القائمة'
+              text: 'اختار من القائمه '
             },
             nativeFlowMessage: {
               buttons: [
                 {
                   name: 'single_select',
                   buttonParamsJson: JSON.stringify({
-                    title: 'دوس عليا 💔',
+                    title: 'عرض القائمة',
                     sections: [
                       {
                         title: 'List',
                         highlight_label: 'ON',
                         rows: [
                           {
-                            header: '☘️ قـسـم الـنـظـام',
-                            title: '.النظام_كود',
+                            header: '☘️ جميع الاوامر ',
+                            title: '.اوامر',
                             description: '',
                             id: 'te'
                           },
@@ -50,6 +50,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['القائمة']
+handler.command = ['الاوامر']
 
 export default handler
