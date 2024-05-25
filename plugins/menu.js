@@ -4,20 +4,18 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'morocco':'  ‎أوامر للمغاربة',
   'applications':'‎ أوامر التطبيقات‎',
   'drawing':'‎ توليد الصور‎ أوامر' ,
   'ai':'‎ الذكاء الاصطناعي‎ أوامر',
   'infobot':'‎ معلومات البوت‎',
   'downloader':'‎ أوامر التحميلات',
-  'anime':'‎ أوامر عن  الأنيم',
+  'anime':'‎ أوامر عن الانمي',
   'islam':'‎ الدين هو الاسلام‎',
   'owner':'‎ اوامر صاحب البوت',
   'search':'‎ أوامر البحث',
   'audio-changer':'‎ تعديل الصوتيات‎',
   'sticker':'‎ أوامر الملصقات',
   'image-edit':'‎ تعديل الصور',
-  'pdf':'‎ pdf ومشتقاته‎',
   'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
@@ -154,9 +152,9 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['menu']
-handler.tags = ['infobot']
-handler.command = ['menu','b','list'] 
+handler.help = ['اوامر']
+handler.tags = ['اوامر']
+handler.command = ['اوامر','ا','list'] 
 handler.register = false
 
 
