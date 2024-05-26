@@ -4,7 +4,21 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'اوامر التنزيل',
+  'morocco':'  ‎أوامر للمغاربة',
+  'applications':'‎ أوامر التطبيقات‎',
+  'drawing':'‎ توليد الصور‎ أوامر' ,
+  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
+  'infobot':'‎ معلومات البوت‎',
+  'downloader':'‎ أوامر التحميلات',
+  'anime':'‎ أوامر عن  الأنيم',
+  'islam':'‎ الدين هو الاسلام‎',
+  'owner':'‎ اوامر صاحب البوت',
+  'search':'‎ أوامر البحث',
+  'audio-changer':'‎ تعديل الصوتيات‎',
+  'sticker':'‎ أوامر الملصقات',
+  'image-edit':'‎ تعديل الصور',
+  'pdf':'‎ pdf ومشتقاته‎',
+  'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
   before: `السلام عليكم 👋. 
@@ -14,12 +28,12 @@ const defaultMenu = {
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *𝒁 𝑶 𝑹 𝑶 - 𝑩 𝑶 𝑻*
+  ≡ *B O B I Z A | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '< إستخدام البوت براحتك',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212717457920',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -122,8 +136,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: '𝒁 𝑶 𝑹 𝑶 - 𝑩 𝑶 𝑻',
-thumbnailUrl: 'https://telegra.ph/file/207dd892d16a44633922f.jpg',
+title: 'BOBIZA BOT ♥',
+body: "أول بوت واتساب في العالم العربي 💖",
+thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
+sourceUrl: 'https://instagram.com/noureddine_ouafy',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
@@ -142,7 +158,7 @@ renderLargerThumbnail: true
 }
 handler.help = ['menu']
 handler.tags = ['infobot']
-handler.command = ['اوامر','b','list'] 
+handler.command = ['menu','b','list'] 
 handler.register = false
 
 
